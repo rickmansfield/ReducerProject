@@ -1,5 +1,25 @@
 # The Reducer Pattern Module Project: The Calculator
 
+- [The Reducer Pattern Module Project: The Calculator](#the-reducer-pattern-module-project-the-calculator)
+  - [Objectives](#objectives)
+  - [Introduction](#introduction)
+  - [Instructions](#instructions)
+    - [Task 1: Project Set Up](#task-1-project-set-up)
+    - [Task 2: Project Requirements](#task-2-project-requirements)
+      - [Connect The Reducer](#connect-the-reducer)
+      - [Display our state within the UI.](#display-our-state-within-the-ui)
+      - [Connect a premade action.](#connect-a-premade-action)
+      - [Connect a better premade action.](#connect-a-better-premade-action)
+      - [Create and connect an action creator.](#create-and-connect-an-action-creator)
+      - [Create and connect a reducer case and action creator.](#create-and-connect-a-reducer-case-and-action-creator)
+      - [Add in memory functions from scratch.](#add-in-memory-functions-from-scratch)
+    - [Task 3: Stretch goals](#task-3-stretch-goals)
+  - [Class notes:](#class-notes)
+    - [What is state?](#what-is-state)
+    - [What is "State" in React?](#what-is-state-in-react)
+    - [Reducers](#reducers)
+    - [What DISPATCH (action) does](#what-dispatch-action-does)
+
 This module explored the reducer pattern. During the module, you studied what immutability is, what reducers, actions and dispatch are, and how to use the reducer hook. In this project, you will practice each of the steps of building state and actions into an application. We will do this by both adding in and building from scratch all of the pieces of the reducer pattern.
 
 ## Objectives
@@ -99,3 +119,32 @@ export const initialState = {
 ### Task 3: Stretch goals
 - [ ] There is a version of the calculator focuses on adding individual digits, rather then entire numbers. How do you imagine adding an individual digit to the total state?
 - [ ] [Here is an example](https://freshman.tech/calculator/) of a (non-reducer) approach to building an javascript calculator. Feel free to make a new branch and use the basic ideas in the post to build a new version of the calculator.
+
+## Class notes: 
+
+### What is state?
+- **Answer** 
+  - State describes the status of the entire program or an individual object. It could be text, a number, a boolean, or another data type. 
+  - It's a common tool for coordinating code. For example, once you update state, a bunch of different functions can instantly react to that change. 
+  - It is the method through which we hold and manipulate data (Stateful Logic).
+  - A means to renenber our app every time we update data.
+
+### What is "State" in React?
+    - The method through which we hold and maniputlate data. 
+    - A means to render our app every time we update data. 
+  
+### Reducers
+- Clear definitioin of data/actions
+- Implementation Agnostic
+- No Prop Drilling Needed
+- Provides immutable, pure, single source of data Truth! (Not necessarily "changing" it but getting a brand new copy of it or a structure "version" of the original witout side effects. )
+
+### What DISPATCH (action) does
+- calls the action creator function 
+- calls the reducer 
+  ```javascript
+  let newState = reducer ({ currentValue: 0 }, { type: "ADD", payload: 5 })
+  ```
+- Get the modified state from the Reducer
+- RERENDERS the component with the modified state passed in. 
+
