@@ -3,11 +3,12 @@ import { ADD_ONE, APPLY_NUMBER, CHANGE_OPERATION } from './../actions';
 
 export const initialState = {
     total: 0,
-    operation: "*",
+    operation: "+",
     memory: 0
 }
 
 const calculateResult = (num1, num2, operation) => {
+    // eslint-disable-next-line default-case
     switch(operation) {
         case("+"):
             return num1 + num2;
@@ -15,8 +16,6 @@ const calculateResult = (num1, num2, operation) => {
             return num1 * num2;
         case("-"):
             return num1 - num2;
-        // default:
-        //         return (null);
     }
 }
 

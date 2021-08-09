@@ -5,7 +5,7 @@ import './App.css';
 
 import TotalDisplay from './components/TotalDisplay';
 import CalcButton from './components/CalcButton';
-import { applyNumber, addOne } from '../src/actions/index';
+import { applyNumber } from '../src/actions/index';
 
 function App() {
   console.log(initialState);
@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="App">
       <nav className="navbar navbar-dark bg-dark">
-        <a className="navbar-brand" href="#"><img width="40px" src="./Lambda-Logo-Red.png" alt=''/> Lambda Reducer Challenge</a>
+        {/* <a className="navbar-brand" href="#"><img width="40px" src="./Lambda-Logo-Red.png" alt=''/> Lambda Reducer Challenge</a> */}
       </nav>
 
       <div className = "container row mt-5">
@@ -44,9 +44,9 @@ function App() {
 
             <div className="row">
               {/* <CalcButton value={1} onClick={handleAddOneClick}/> */}
-              <CalcButton value={1} onClick={()=> handleNumberClick(1)}/>
-              <CalcButton value={2}/>
-              <CalcButton value={3}/>
+              <CalcButton value={1} onClick={()=> {handleNumberClick(1)}}/>
+              <CalcButton value={2} onClick={()=> {handleNumberClick(2)}}/>
+              <CalcButton value={3} onClick={()=> {handleNumberClick(3)}}/>
             </div>
 
             <div className="row">
