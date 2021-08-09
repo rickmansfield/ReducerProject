@@ -1,3 +1,4 @@
+//ACTION CASES
 import { ADD_ONE, APPLY_NUMBER, CHANGE_OPERATION } from './../actions';
 
 export const initialState = {
@@ -14,6 +15,8 @@ const calculateResult = (num1, num2, operation) => {
             return num1 * num2;
         case("-"):
             return num1 - num2;
+        // default:
+        //         return (null);
     }
 }
 
