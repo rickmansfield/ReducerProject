@@ -15,9 +15,9 @@ import {
 } from '../src/actions/index';
 
 function App() {
- // console.log('App.js 10 access to initialState',initialState);
+  // console.log(initialState);
   const [state, dispatch] = useReducer(reducer, initialState);
-  console.log('App.js 12 current state via dispatch useReducer', state);
+  console.log(state);
 
   // const handleAddOneClick = e => {
   //   dispatch(addOne());
