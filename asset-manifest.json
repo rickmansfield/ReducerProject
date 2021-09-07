@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ReducerProject/static/css/main.dde0e7bb.chunk.css",
+    "main.js": "/ReducerProject/static/js/main.20aeccfc.chunk.js",
+    "main.js.map": "/ReducerProject/static/js/main.20aeccfc.chunk.js.map",
+    "runtime-main.js": "/ReducerProject/static/js/runtime-main.75b3ef53.js",
+    "runtime-main.js.map": "/ReducerProject/static/js/runtime-main.75b3ef53.js.map",
+    "static/js/2.2bf0bd98.chunk.js": "/ReducerProject/static/js/2.2bf0bd98.chunk.js",
+    "static/js/2.2bf0bd98.chunk.js.map": "/ReducerProject/static/js/2.2bf0bd98.chunk.js.map",
+    "static/js/3.ec1f4d8b.chunk.js": "/ReducerProject/static/js/3.ec1f4d8b.chunk.js",
+    "static/js/3.ec1f4d8b.chunk.js.map": "/ReducerProject/static/js/3.ec1f4d8b.chunk.js.map",
+    "index.html": "/ReducerProject/index.html",
+    "static/css/main.dde0e7bb.chunk.css.map": "/ReducerProject/static/css/main.dde0e7bb.chunk.css.map",
+    "static/js/2.2bf0bd98.chunk.js.LICENSE.txt": "/ReducerProject/static/js/2.2bf0bd98.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.75b3ef53.js",
+    "static/js/2.2bf0bd98.chunk.js",
+    "static/css/main.dde0e7bb.chunk.css",
+    "static/js/main.20aeccfc.chunk.js"
+  ]
+}
